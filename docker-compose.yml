@@ -70,12 +70,12 @@ services:
       MYSQL_DB_HOST: mysql-event
       MYSQL_DB_PORT: 3306
 
-  gateway:
+  api-gateway:
     depends_on:
       - beer-service
-    image: iliaslatifine/ede-gateway
+    image: iliaslatifine/ede-api-gateway
     ports:
-      - 8084:8084
+      - 8083:8083
     links:
       - beer-service
     environment:
