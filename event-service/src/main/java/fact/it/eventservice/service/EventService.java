@@ -23,7 +23,7 @@ public class EventService {
     private final EventRepository eventRepository;
     private final WebClient webClient;
 
-    @Value("barservice.baseurl")
+    @Value("${BAR_SERVICE_BASEURL:localhost:8081}")
     private String barServiceBaseUrl;
 
     @PostConstruct
