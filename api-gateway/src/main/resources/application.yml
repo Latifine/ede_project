@@ -44,4 +44,35 @@ spring:
           filters:
             - SetPath=/api/beer/{beerId}
 
+        - id: bar-service-all
+          uri: http://${BAR_SERVICE_BASEURL:localhost:8081}
+          predicates:
+            - Path=/bars
+            - Method=GET
+          filters:
+            - SetPath=/api/bar/all
+
+        - id: bar-service-bar
+          uri: http://${BAR_SERVICE_BASEURL:localhost:8081}
+          predicates:
+            - Path=/bar
+            - Method=GET
+          filters:
+            - SetPath=/api/bar
+
+        - id: bar-service-post
+          uri: http://${BAR_SERVICE_BASEURL:localhost:8081}
+          predicates:
+            - Path=/bars
+            - Method=POST
+          filters:
+            - SetPath=/api/bar
+
+        - id: bar-service-put
+          uri: http://${BAR_SERVICE_BASEURL:localhost:8081}
+          predicates:
+            - Path=/bars
+            - Method=PUT
+          filters:
+            - SetPath=/api/bar/{id}
 
