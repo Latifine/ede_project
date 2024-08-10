@@ -28,4 +28,20 @@ spring:
           filters:
             - SetPath=/api/beer
 
+        - id: beer-service-post
+          uri: http://${BEER_SERVICE_BASEURL:localhost:8080}
+          predicates:
+            - Path=/beers
+            - Method=POST
+          filters:
+            - SetPath=/api/beer
+
+        - id: beer-service-delete
+          uri: http://${BEER_SERVICE_BASEURL:localhost:8080}
+          predicates:
+            - Path=/beers/{beerId}
+            - Method=DELETE
+          filters:
+            - SetPath=/api/beer/{beerId}
+
 
