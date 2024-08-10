@@ -76,3 +76,19 @@ spring:
           filters:
             - SetPath=/api/bar/{id}
 
+        - id: event-service-all
+          uri: http://${EVENT_SERVICE_BASEURL:localhost:8082}
+          predicates:
+            - Path=/events
+            - Method=GET
+          filters:
+            - SetPath=/api/event
+
+        - id: event-service-post
+          uri: http://${EVENT_SERVICE_BASEURL:localhost:8082}
+          predicates:
+            - Path=/events
+            - Method=POST
+          filters:
+            - SetPath=/api/event
+

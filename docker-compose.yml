@@ -74,15 +74,18 @@ services:
     depends_on:
       - beer-service
       - bar-service
+      - event-service
     image: iliaslatifine/ede-api-gateway
     ports:
       - 8083:8083
     links:
       - beer-service
       - bar-service
+      - event-service
     environment:
       BEER_SERVICE_BASEURL: beer-service:8080
       BAR_SERVICE_BASEURL: bar-service:8081
+      EVENT_SERVICE_BASEURL: event-service:8082
 volumes:
   mongodb_beer_data:
   mysql_bar_data:
