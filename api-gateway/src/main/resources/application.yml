@@ -19,6 +19,7 @@ spring:
             - Method=GET
           filters:
             - SetPath=/api/beer/all
+
         - id: beer-service-beers
           uri: http://${BEER_SERVICE_BASEURL:localhost:8080}
           predicates:
@@ -26,3 +27,5 @@ spring:
             - Method=GET
           filters:
             - SetPath=/api/beer
+
+
