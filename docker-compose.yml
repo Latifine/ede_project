@@ -2,7 +2,7 @@ services:
   mongo-beer:
     image: mongo:latest
     ports:
-      - 27017:27017
+      - 27018:27017
     volumes:
       - mongodb_beer_data:/data/db
 
