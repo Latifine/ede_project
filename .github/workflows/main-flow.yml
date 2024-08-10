@@ -5,7 +5,7 @@ on: push
 jobs:
   barservice:
     runs-on: ubuntu-latest
-    name: Java 17 build, test, deliver match-service container
+    name: Java 17 build, test, deliver bar-service container
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -25,13 +25,14 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Docker Build
-        run: docker build -t ${{ secrets.DOCKER_USER }}/match-service:latest ./match-service
+        run: docker build -t ${{ secrets.DOCKER_USER }}/bar-service:latest ./bar-service
 
       - name: Upload container to Docker Hub with Push
-        run: docker push ${{ secrets.DOCKER_USER }}/match-service:latest
+        run: docker push ${{ secrets.DOCKER_USER }}/bar-service:latest
+
   beerservice:
     runs-on: ubuntu-latest
-    name: Java 17 build, test, deliver player-service container
+    name: Java 17 build, test, deliver beer-service container
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -51,13 +52,14 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Docker Build
-        run: docker build -t ${{ secrets.DOCKER_USER }}/player-service:latest ./player-service
+        run: docker build -t ${{ secrets.DOCKER_USER }}/beer-service:latest ./beer-service
 
       - name: Upload container to Docker Hub with Push
-        run: docker push ${{ secrets.DOCKER_USER }}/player-service:latest
+        run: docker push ${{ secrets.DOCKER_USER }}/beer-service:latest
+
   eventservice:
     runs-on: ubuntu-latest
-    name: Java 17 build, test, deliver transfer-service container
+    name: Java 17 build, test, deliver event-service container
     steps:
       - name: Check out repository
         uses: actions/checkout@v3
@@ -77,7 +79,7 @@ jobs:
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}
 
       - name: Docker Build
-        run: docker build -t ${{ secrets.DOCKER_USER }}/transfer-service:latest ./transfer-service
+        run: docker build -t ${{ secrets.DOCKER_USER }}/event-service:latest ./event-service
 
       - name: Upload container to Docker Hub with Push
-        run: docker push ${{ secrets.DOCKER_USER }}/transfer-service:latest
+        run: docker push ${{ secrets.DOCKER_USER }}/event-service:latest
