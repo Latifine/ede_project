@@ -29,7 +29,7 @@ services:
       - mongo-beer
     image: iliaslatifine/beer-service
     ports:
-      - 8083:8080
+      - 8080:8080
     links:
       - mongo-beer
     environment:
