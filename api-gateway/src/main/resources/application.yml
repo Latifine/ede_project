@@ -5,12 +5,10 @@ logging:
   level:
     root: INFO
     org.springframework.cloud.gateway: TRACE
-    org.springframework.cloud.gateway.route.RouteDefinitionRouteLocator: INFO
+    org.springframework.cloud.gateway.RouteDefinitionRouteLocator: INFO
     reactor.netty: TRACE
 
 spring:
-  main:
-    web-application-type: reactive
   cloud:
     gateway:
       routes:
