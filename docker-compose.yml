@@ -64,11 +64,22 @@ services:
       - mysql-event
       - bar-service
     environment:
-      BAR_SERVICE_BASEURL: event-service:8081
+      BAR_SERVICE_BASEURL: bar-service:8081
       MYSQL_DB_USERNAME: root
       MYSQL_DB_PASSWORD: abc123
       MYSQL_DB_HOST: mysql-event
       MYSQL_DB_PORT: 3306
+
+  api-gateway:
+    depends_on:
+      - beer-service
+    image: iliaslatifine/ede-api-gateway
+    ports:
+      - 8083:8083
+    links:
+      - beer-service
+    environment:
+      BEER_SERVICE_BASEURL: beer-service:8080
 
 volumes:
   mongodb_beer_data:
