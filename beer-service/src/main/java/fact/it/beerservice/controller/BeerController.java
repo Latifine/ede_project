@@ -30,14 +30,8 @@ public class BeerController {
 
     @GetMapping
     @ResponseStatus(HttpStatus.OK)
-    public List<BeerResponse> getBeers(@RequestParam List<String> beerName) {
-        return beerService.getBeers(beerName);
-    }
-
-    @GetMapping("/")
-    @ResponseStatus(HttpStatus.OK)
-    public BeerResponse getBeer(@RequestParam String name) {
-        return beerService.getBeer(name);
+    public List<BeerResponse> getBeers(@RequestParam List<String> name) {
+        return beerService.getBeers(name);
     }
 
     @DeleteMapping("/{beerId}")

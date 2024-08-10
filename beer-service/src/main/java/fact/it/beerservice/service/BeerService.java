@@ -80,14 +80,14 @@ public class BeerService {
         }
     }
 
-    public List<BeerResponse> getBeers(List<String> beerName) {
-        List<Beer> beers = beerRepository.findByNameIn(beerName);
+    public List<BeerResponse> getBeers(List<String> name) {
+        List<Beer> beers = beerRepository.findByNameIn(name);
 
         return beers.stream().map(this::mapToBeerResponse).toList();
     }
 
-    public BeerResponse getBeer(String name) {
-        Beer beer = beerRepository.findByName(name);
-        return mapToBeerResponse(beer);
-    }
+//    public BeerResponse getBeer(String name) {
+//        Beer beer = beerRepository.findByName(name);
+//        return mapToBeerResponse(beer);
+//    }
 }
