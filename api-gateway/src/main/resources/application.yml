@@ -71,7 +71,7 @@ spring:
         - id: bar-service-put
           uri: http://${BAR_SERVICE_BASEURL:localhost:8081}
           predicates:
-            - Path=/bars
+            - Path=/bars/{id}
             - Method=PUT
           filters:
             - SetPath=/api/bar/{id}
