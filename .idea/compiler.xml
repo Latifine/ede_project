@@ -9,10 +9,12 @@
         <outputRelativeToContentRoot value="true" />
         <module name="bar-service" />
         <module name="event-service" />
+        <module name="gateway" />
         <module name="beer-service" />
       </profile>
     </annotationProcessing>
     <bytecodeTargetLevel>
+      <module name="api-gateway" target="17" />
       <module name="cafe-service" target="17" />
       <module name="inventory-service" target="17" />
       <module name="order-service" target="17" />
@@ -28,6 +30,7 @@
       <module name="beer-service" options="-parameters" />
       <module name="cafe-service" options="-parameters" />
       <module name="event-service" options="-parameters" />
+      <module name="gateway" options="-parameters" />
       <module name="inventory-service" options="-parameters" />
       <module name="order-service" options="-parameters" />
       <module name="product-service" options="-parameters" />
