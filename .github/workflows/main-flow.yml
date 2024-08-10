@@ -29,7 +29,7 @@ jobs:
 
       - name: Upload container to Docker Hub with Push
         run: docker push ${{ secrets.DOCKER_USER }}/bar-service:latest
-  beerservice:
+  productservice:
     runs-on: ubuntu-latest
     name: Java 17 build, test, deliver beer-service container
     steps:
@@ -45,7 +45,7 @@ jobs:
 
       - name: Build, test and package project
         working-directory: ./beer-service
-        run: mvn package -DskipTests
+        run: mvn package -B
 
       - name: Docker login
         run: docker login -u ${{ secrets.DOCKER_USER }} -p ${{ secrets.DOCKER_PASSWORD }}

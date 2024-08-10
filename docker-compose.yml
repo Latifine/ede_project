@@ -1,5 +1,5 @@
 services:
-  mongo-beer:
+  mongo-beers:
     image: mongo:latest
     ports:
       - 27017:27017
@@ -26,15 +26,15 @@ services:
 
   beer-service:
     depends_on:
-      - mongo-beer
+      - mongo-beers
     image: iliaslatifine/beer-service
     ports:
       - 8080:8080
     links:
-      - mongo-beer
+      - mongo-beers
     environment:
       MONGODB_PORT: 27017
-      MONGODB_HOST: mongo-beer
+      MONGODB_HOST: mongo-beers
 
   bar-service:
     depends_on:
