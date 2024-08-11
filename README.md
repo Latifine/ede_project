@@ -7,6 +7,8 @@
 - [Introduction](#introduction)
 - [Diagram](#diagram)
 - [CI-CD pipline](#ci-cd-pipeline)
+- [0Auth2](#0auth2)
+
 
 
 ## Introduction
@@ -61,5 +63,27 @@ When i try to delete a beer from the list without being autorized it will not wo
 
 When i try to delete a beer with the right autorization key it will work.
 ![Key](https://github.com/Latifine/ede_project/blob/main/images%20ede/auth.JPG)
+
+## Postman Requests
+
+### Beer Service
+
+Get all beers
+![AllBeers](https://github.com/Latifine/ede_project/blob/main/images%20ede/allBeers.JPG)
+
+Get beers by name
+![Beer](https://github.com/Latifine/ede_project/blob/main/images%20ede/beerlist.JPG)
+
+Add beer
+![New Beer 1](https://github.com/Latifine/ede_project/blob/main/images%20ede/newBeer1.JPG)
+
+Show new beer
+![New Beer 2](https://github.com/Latifine/ede_project/blob/main/images%20ede/newBeer2.JPG)
+
+Delete beer
+![Delete Beer 1](https://github.com/Latifine/ede_project/blob/main/images%20ede/deleteBeer1.JPG)
+
+Show Deleted beer
+![Delete Beer 2](https://github.com/Latifine/ede_project/blob/main/images%20ede/deleteBeer2.JPG)
 
 
