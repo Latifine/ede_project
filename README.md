@@ -107,3 +107,15 @@ Edit bar
 Show Edited bar
 ![Edit Bar 2](https://github.com/Latifine/ede_project/blob/main/images%20ede/editBar2.JPG)
 
+### Event Service
+
+Get all events
+![All Events](https://github.com/Latifine/ede_project/blob/main/images%20ede/allEvents.JPG)
+
+Add event
+![New Bar 1](https://github.com/Latifine/ede_project/blob/main/images%20ede/newEvent1.JPG)
+
+Show new event
+![New Bar 2](https://github.com/Latifine/ede_project/blob/main/images%20ede/newEvent2.JPG)
+
+
