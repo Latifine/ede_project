@@ -30,16 +30,17 @@ Below you can see the diagram of my project
 
 ### Github Actions
 A Github workflow is made that includes building an uploading docker containers for each service.
-![Github Actions]()
+![Github Actions](https://github.com/Latifine/ede_project/blob/main/images%20ede/Github-actions.jpg)
+
 
 ### Docker Compose
 
 The Docker Compose file makes sure that all the containers are made and started for all the services. These containers include databases but also the custom services.
-![Docker Compose]()
+![Docker Compose](https://github.com/Latifine/ede_project/blob/main/images%20ede/dockercompose)
 
 ### Docker Desktop
 
 All the containers are runned local on my own device and we can check them via Docker Desktop.
-![Docker Desktop]()
+![Docker Desktop](https://github.com/Latifine/ede_project/blob/main/images%20ede/dockerdesktop)
 
 
