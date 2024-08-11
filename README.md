@@ -12,6 +12,7 @@
   - [Beer Service](#beer-service)
   - [Bar Service](#bar-service)
   - [Event Service](#event-service)
+- [Unit Tests](#unit-tests)
 
 
 
