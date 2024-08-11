@@ -34,6 +34,12 @@ public class BeerController {
         return beerService.getBeers(beerName);
     }
 
+    @GetMapping("/")
+    @ResponseStatus(HttpStatus.OK)
+    public BeerResponse getBeer(@RequestParam String name) {
+        return beerService.getBeer(name);
+    }
+
     @DeleteMapping("/{beerId}")
     @ResponseStatus(HttpStatus.OK)
     public String deleteBeer(@PathVariable String beerId){

@@ -10,7 +10,6 @@ import lombok.RequiredArgsConstructor;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
-import java.util.Random;
 
 @Service
 @RequiredArgsConstructor
@@ -86,4 +85,8 @@ public class BeerService {
         return beers.stream().map(this::mapToBeerResponse).toList();
     }
 
+    public BeerResponse getBeer(String name) {
+        Beer beer = beerRepository.findByName(name);
+        return mapToBeerResponse(beer);
+    }
 }
