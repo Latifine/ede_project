@@ -48,4 +48,18 @@ All the containers are runned local on my own device and we can check them via D
 
 ![Docker Desktop](https://github.com/Latifine/ede_project/blob/main/images%20ede/dockerdesktop.JPG)
 
+## 0Auth2
+
+We used 0Auth2 on the API gateway. So you can only do basic functions without being autorized.
+
+### Without key
+
+When i try to delete a beer from the list without being autorized it will not work.
+![No Key](https://github.com/Latifine/ede_project/blob/main/images%20ede/noauth.JPG)
+
+### With key
+
+When i try to delete a beer with the right autorization key it will work.
+![Key](https://github.com/Latifine/ede_project/blob/main/images%20ede/auth.JPG)
+
 
