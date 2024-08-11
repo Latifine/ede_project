@@ -24,3 +24,5 @@ with this project you can see bars and their events but also which beers each ba
 
 Below you can see the diagram of my project
 
+![Diagram]
+
