@@ -53,7 +53,7 @@ public class EventService {
                 .retrieve()
                 .bodyToMono(BarResponse.class)
                 .block();
-        System.out.println(bar);
+
         assert bar != null;
         event.setBar(mapBarResponseToEntity(bar));
         eventRepository.save(event);

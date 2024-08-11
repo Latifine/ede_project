@@ -56,9 +56,6 @@ public class BarService {
         UriComponentsBuilder uriBuilder = UriComponentsBuilder.fromHttpUrl(uri)
                 .queryParam("beerName", commaSeparatedNames);
 
-        // Print the URI
-        System.out.println("WebClient URI: " + uriBuilder.toUriString());
-
         List<BeerResponse> beers = webClient.get()
                 .uri(uriBuilder.toUriString())
                 .retrieve()

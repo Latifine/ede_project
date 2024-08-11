@@ -86,8 +86,4 @@ public class BeerService {
         return beers.stream().map(this::mapToBeerResponse).toList();
     }
 
-    public BeerResponse getBeer(String name) {
-        Beer beer = beerRepository.findByName(name);
-        return mapToBeerResponse(beer);
-    }
 }

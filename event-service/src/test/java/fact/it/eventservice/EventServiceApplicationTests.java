@@ -84,7 +84,6 @@ class EventServiceApplicationTests {
         when(webClient.get()).thenReturn(requestHeadersUriSpec);
         when(requestHeadersUriSpec.uri(eq("http://localhost:8081/api/bar"), any(Function.class))).thenReturn(requestHeadersSpec);
         when(requestHeadersSpec.retrieve()).thenReturn(responseSpec);
-        // Correct the stubbing for bodyToMono to return a non-null Mono
         when(responseSpec.bodyToMono(BarResponse.class)).thenReturn(Mono.just(barResponse));
 
         // Act
