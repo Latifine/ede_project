@@ -124,9 +124,12 @@ Show new event
 ## Unit Tests
 
 ### Beer Tests
+![Beer Tests](https://github.com/Latifine/ede_project/blob/main/images%20ede/beerTest.JPG)
 
 ### Bar Tests
+![Bar Tests](https://github.com/Latifine/ede_project/blob/main/images%20ede/barTest.JPG)
 
 ### Event Tests
+![Event Tests](https://github.com/Latifine/ede_project/blob/main/images%20ede/eventTest.JPG)
 
 
