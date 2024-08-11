@@ -8,6 +8,7 @@
 - [Diagram](#diagram)
 - [CI-CD pipline](#ci-cd-pipeline)
 - [0Auth2](#0auth2)
+- [Postman Requests](#postman-requests)
 
 
 
@@ -86,4 +87,23 @@ Delete beer
 Show Deleted beer
 ![Delete Beer 2](https://github.com/Latifine/ede_project/blob/main/images%20ede/deleteBeer2.JPG)
 
+### Bar Service
+
+Get all bars
+![All Bars[]()](https://github.com/Latifine/ede_project/blob/main/images%20ede/allBars.JPG)
+
+Get bar by name
+![Bar](https://github.com/Latifine/ede_project/blob/main/images%20ede/bar.JPG)
+
+Add bar
+![New Bar 1](https://github.com/Latifine/ede_project/blob/main/images%20ede/newBar1.JPG)
+
+Show new bar
+![New Bar 2](https://github.com/Latifine/ede_project/blob/main/images%20ede/newBar2.JPG)
+
+Edit bar
+![Edit Bar 1](https://github.com/Latifine/ede_project/blob/main/images%20ede/editBar1.JPG)
+
+Show Edited bar
+![Edit Bar 2](https://github.com/Latifine/ede_project/blob/main/images%20ede/editBar2.JPG)
 
