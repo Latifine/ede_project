@@ -9,6 +9,9 @@
 - [CI-CD pipline](#ci-cd-pipeline)
 - [0Auth2](#0auth2)
 - [Postman Requests](#postman-requests)
+  - [Beer Service](#beer-service)
+  - [Bar Service](#bar-service)
+  - [Event Service](#event-service)
 
 
 
