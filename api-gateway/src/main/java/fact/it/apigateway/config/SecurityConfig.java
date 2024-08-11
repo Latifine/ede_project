@@ -19,6 +19,10 @@ public class SecurityConfig {
                 .authorizeExchange(exchange ->
                         exchange.pathMatchers(HttpMethod.GET,"/beers")
                                 .permitAll()
+                                .pathMatchers(HttpMethod.GET, "/bars")
+                                .permitAll()
+                                .pathMatchers(HttpMethod.GET, "/events")
+                                .permitAll()
                                 .anyExchange()
                                 .authenticated()
                 )
