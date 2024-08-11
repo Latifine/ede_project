@@ -121,4 +121,12 @@ Add event
 Show new event
 ![New Bar 2](https://github.com/Latifine/ede_project/blob/main/images%20ede/newEvent2.JPG)
 
+## Unit Tests
+
+### Beer Tests
+
+### Bar Tests
+
+### Event Tests
+
 
