@@ -13,6 +13,7 @@
   - [Bar Service](#bar-service)
   - [Event Service](#event-service)
 - [Unit Tests](#unit-tests)
+- [Conclusion](#conclusion)
 
 
 
@@ -132,5 +133,9 @@ Show new event
 
 ### Event Tests
 ![Event Tests](https://github.com/Latifine/ede_project/blob/main/images%20ede/eventTest.JPG)
+
+## Conclusion
+
+It was a challening project for me but I learned a lot from it and I am very happy with my end result!
 
 
